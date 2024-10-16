@@ -10,6 +10,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+      },
       container: {
         center: true,
         padding: {
