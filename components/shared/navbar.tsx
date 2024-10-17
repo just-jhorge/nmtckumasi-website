@@ -20,7 +20,7 @@ const Navbar = () => {
     <nav className="sticky top-0 w-full bg-white h-16 center border-b border-input shadow-sm">
       <div className="container flex-between">
         <div className="flex items-center gap-1">
-          <Image src={schoolLogo} alt="logo" height={48} width={48} />
+          <Image src={schoolLogo} alt="logo" height={48} width={43} />
           <p className="text-xs text-emerald-600">
             <span className="font-bold">NURSING AND MIDWIFERY</span> <br />
             Training College, Kumasi
