@@ -3,3 +3,9 @@ export interface NavigationLink {
   href: string;
   label: string;
 }
+
+export type FooterLink = {
+  id: number;
+  title: string;
+  links: NavigationLink[];
+};
