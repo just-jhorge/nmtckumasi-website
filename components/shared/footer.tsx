@@ -13,7 +13,7 @@ const Footer = () => {
         { id: 101, href: "/", label: "About Us" },
         { id: 102, href: "/", label: "Faculty & Staff" },
         { id: 103, href: "/", label: "Contact Us" },
-        { id: 103, href: "/", label: "Privacy Policy" },
+        { id: 104, href: "/", label: "Privacy Policy" },
       ],
     },
     {
@@ -21,9 +21,9 @@ const Footer = () => {
       title: "Admissions & Academics",
       links: [
         { id: 201, href: "/", label: "Admissions" },
-        { id: 201, href: "/", label: "Entry Requirements" },
-        { id: 202, href: "/", label: "Courses & Programmes" },
-        { id: 203, href: "/", label: "FAQs" },
+        { id: 202, href: "/", label: "Entry Requirements" },
+        { id: 203, href: "/", label: "Courses & Programmes" },
+        { id: 204, href: "/", label: "FAQs" },
       ],
     },
     {
@@ -33,7 +33,7 @@ const Footer = () => {
         { id: 301, href: "/", label: "Student Portal" },
         { id: 302, href: "/", label: "E-Library" },
         { id: 303, href: "/", label: "Career Opportunities" },
-        { id: 303, href: "/", label: "Alumini" },
+        { id: 304, href: "/", label: "Alumini" },
       ],
     },
     {
