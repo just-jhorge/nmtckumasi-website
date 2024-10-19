@@ -9,7 +9,7 @@ export default function Page() {
     <>
       <section
         id="header"
-        className="relative w-full h-[65dvh] md:h-[80dvh] bg-black"
+        className="relative w-full h-[70dvh] md:h-[85dvh] bg-black"
       >
         Header
       </section>
