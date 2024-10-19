@@ -2,7 +2,7 @@ import { navigationLinks } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
 import schoolLogo from "../../public/images/logo.webp";
-import { AlignJustify } from "lucide-react";
+import { AlignJustify, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -26,12 +26,21 @@ const Navbar = () => {
             Training College, Kumasi
           </p>
         </div>
-        <div className="hidden md:block space-x-5">
-          {navigationLinks.map((link) => (
-            <Link key={link.id} href={link.href}>
-              {link.label}
-            </Link>
-          ))}
+        <div className="hidden md:flex space-x-5">
+          {navigationLinks.map((link) =>
+            link.subMenu ? (
+              <div
+                key={link.id}
+                className="flex items-center cursor-pointer px-0 py-0"
+              >
+                {link.label} <ChevronDown className="h-4 w-4 ml-1" />
+              </div>
+            ) : (
+              <Link key={link.id} href={link.href}>
+                {link.label}
+              </Link>
+            )
+          )}
         </div>
 
         <Sheet>
