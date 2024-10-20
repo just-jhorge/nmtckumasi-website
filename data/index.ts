@@ -1,11 +1,12 @@
 import { NavigationLink } from "@/types";
 
 export const navigationLinks: NavigationLink[] = [
-  { id: 1, href: "/about", label: "About Us" },
+  { id: 1, href: "/about", label: "About Us", value: "about" },
   {
     id: 2,
     href: "",
     label: "Academics",
+    value: "academics",
     subMenu: [
       { id: 201, href: "/academics/programmes", label: "Programmes" },
       { id: 202, href: "/academics/faculty-staff", label: "Faculty & Staff" },
@@ -25,6 +26,7 @@ export const navigationLinks: NavigationLink[] = [
     id: 3,
     href: "",
     label: "Admissions",
+    value: "admissions",
     subMenu: [
       {
         id: 301,
@@ -47,6 +49,7 @@ export const navigationLinks: NavigationLink[] = [
     id: 4,
     href: "/library",
     label: "Library",
+    value: "library",
     subMenu: [
       {
         id: 401,
@@ -69,20 +72,26 @@ export const navigationLinks: NavigationLink[] = [
     id: 5,
     href: "",
     label: "Media",
+    value: "media",
     subMenu: [
-      { id: 501, href: "/news", label: "News" },
-      { id: 502, href: "/events", label: "Events" },
-      { id: 503, href: "/gallery", label: "Gallery" },
+      { id: 501, href: "/media/news", label: "News" },
+      { id: 502, href: "/media/events", label: "Events" },
+      { id: 503, href: "/media/gallery", label: "Gallery" },
     ],
   },
   {
     id: 6,
     href: "",
     label: "Students & Alumini",
+    value: "students",
     subMenu: [
-      { id: 601, href: "/student-leadership", label: "Student Leadership" },
-      { id: 602, href: "/campus-life", label: "Campus Life" },
-      { id: 603, href: "/Alumini", label: "Alumini" },
+      {
+        id: 601,
+        href: "/students-alumini/students-leadership",
+        label: "Student Leadership",
+      },
+      { id: 602, href: "/students-alumini/campus-life", label: "Campus Life" },
+      { id: 603, href: "/students-alumini/Alumini", label: "Alumini" },
     ],
   },
 ];

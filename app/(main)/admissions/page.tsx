@@ -1,3 +1,5 @@
+import { redirect } from "next/navigation";
+
 export default function Page() {
-  return <div>Admissions page</div>;
+  redirect("/admissions/entry-requirements");
 }

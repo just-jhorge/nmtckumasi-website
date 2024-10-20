@@ -1,11 +1,3 @@
-"use client";
-
-import { navigationLinks } from "@/data";
-import Image from "next/image";
-import Link from "next/link";
-import schoolLogo from "../../public/images/logo.webp";
-import { AlignJustify } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import {
   Sheet,
   SheetClose,
@@ -15,20 +7,20 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible";
+import Link from "next/link";
+import Image from "next/image";
+import { navigationLinks } from "@/data";
+import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { useState } from "react";
+import schoolLogo from "../../public/images/logo.webp";
+import { AlignJustify, ChevronDown } from "lucide-react";
 
 const Navbar = () => {
-  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
-
-  const toggleDropdown = (dropdown: string) => {
-    if (openDropdown === dropdown) {
-      setOpenDropdown(null);
-    } else {
-      setOpenDropdown(dropdown);
-    }
-  };
-
   return (
     <nav className="sticky top-0 z-50 w-full bg-white h-16 center border-b border-input shadow-sm">
       <div className="container flex-between">
@@ -79,36 +71,40 @@ const Navbar = () => {
               <AlignJustify size={25} />
             </Button>
           </SheetTrigger>
-          <SheetContent>
+          <SheetContent side="left">
             <SheetHeader>
               <SheetTitle className="text-left text-2xl">Menu</SheetTitle>
               <Separator />
               <SheetDescription />
             </SheetHeader>
-            <div className="py-4 flex flex-col items-start space-y-3 mt-5">
+            <div className="py-4 flex flex-col items-start space-y-4 mt-5">
               {navigationLinks.map((link) =>
                 link.subMenu ? (
-                  <div key={link.id} onClick={() => toggleDropdown(link.label)}>
-                    <div>{link.label}</div>
-                    <div
-                      className={`absolute flex flex-col items-start space-y-2 left-6 border border-input mt-2 w-[17rem] p-4 bg-white shadow-lg rounded-sm z-10 ${
-                        openDropdown === link.label ? "block" : "hidden"
-                      }`}
-                    >
+                  <Collapsible key={link.id} className="w-[350px] space-y-2">
+                    <div className="flex items-center justify-between">
+                      <CollapsibleTrigger asChild>
+                        <div className="flex items-center">
+                          {link.label}{" "}
+                          <ChevronDown className="h-4 w-4 text-muted-foreground ml-2" />
+                        </div>
+                      </CollapsibleTrigger>
+                    </div>
+                    <CollapsibleContent className="flex flex-col items-start space-y-2 transition-all duration-150 border-l border-input pl-5">
                       {link.subMenu.map((link) => (
                         <SheetClose key={link.id} asChild>
-                          <Link href={link.href} className="">
+                          <Link
+                            href={link.href}
+                            className="text-sm text-muted-foreground"
+                          >
                             {link.label}
                           </Link>
                         </SheetClose>
                       ))}
-                    </div>
-                  </div>
+                    </CollapsibleContent>
+                  </Collapsible>
                 ) : (
                   <SheetClose key={link.id} asChild>
-                    <Link href={link.href} className="">
-                      {link.label}
-                    </Link>
+                    <Link href={link.href}>{link.label}</Link>
                   </SheetClose>
                 )
               )}

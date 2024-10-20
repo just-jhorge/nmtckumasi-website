@@ -1,3 +1,5 @@
+import { redirect } from "next/navigation";
+
 export default function Page() {
-  return <div>Academics page</div>;
+  redirect("/academics/programmes");
 }
