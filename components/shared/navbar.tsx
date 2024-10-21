@@ -45,9 +45,25 @@ const Navbar = () => {
                         key={link.id}
                         className="px-4 py-2 hover:bg-accent rounded-md"
                       >
-                        <Link href={link.href} className="text-sm">
-                          {link.label}
-                        </Link>
+                        {link.isAsset ? (
+                          <a
+                            href={link.assetLocation}
+                            className="text-sm"
+                            download={`${link.label
+                              .toLowerCase()
+                              .split(" ")
+                              .join("-")}.pdf`}
+                          >
+                            {link.label}{" "}
+                            <span className="text-[10px] bg-primary py-0.5 px-1 text-white rounded-sm">
+                              asset
+                            </span>
+                          </a>
+                        ) : (
+                          <Link href={link.href} className="text-sm">
+                            {link.label}
+                          </Link>
+                        )}
                       </li>
                     ))}
                   </ul>
@@ -92,12 +108,28 @@ const Navbar = () => {
                     <CollapsibleContent className="flex flex-col items-start space-y-2 transition-all duration-150 border-l border-input pl-5">
                       {link.subMenu.map((link) => (
                         <SheetClose key={link.id} asChild>
-                          <Link
-                            href={link.href}
-                            className="text-sm text-muted-foreground"
-                          >
-                            {link.label}
-                          </Link>
+                          {link.isAsset ? (
+                            <a
+                              href={link.assetLocation}
+                              className="text-sm text-muted-foreground"
+                              download={`${link.label
+                                .toLowerCase()
+                                .split(" ")
+                                .join("-")}.pdf`}
+                            >
+                              {link.label}{" "}
+                              <span className="text-[10px] bg-primary py-0.5 px-1 text-white rounded-sm">
+                                asset
+                              </span>
+                            </a>
+                          ) : (
+                            <Link
+                              href={link.href}
+                              className="text-sm text-muted-foreground"
+                            >
+                              {link.label}
+                            </Link>
+                          )}
                         </SheetClose>
                       ))}
                     </CollapsibleContent>

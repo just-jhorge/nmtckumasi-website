@@ -2,6 +2,8 @@ interface BaseLink {
   id: number;
   href: string;
   label: string;
+  isAsset?: boolean;
+  assetLocation?: string;
 }
 
 export type DropdownType =

@@ -1,7 +1,7 @@
 import { NavigationLink } from "@/types";
 
 export const navigationLinks: NavigationLink[] = [
-  { id: 1, href: "/about", label: "About Us", value: "about" },
+  { id: 1, href: "/about", label: "About", value: "about" },
   {
     id: 2,
     href: "",
@@ -17,8 +17,10 @@ export const navigationLinks: NavigationLink[] = [
       },
       {
         id: 204,
-        href: "/academics/academic-calendar",
+        href: "#",
         label: "Academic Calendar",
+        isAsset: true,
+        assetLocation: "/docs/academic-calendar.pdf",
       },
     ],
   },
@@ -30,7 +32,9 @@ export const navigationLinks: NavigationLink[] = [
     subMenu: [
       {
         id: 301,
-        href: "/admissions/entry-requirements",
+        href: "#",
+        isAsset: true,
+        assetLocation: "/docs/entry-requirements.pdf",
         label: "Entry Requirements",
       },
       {
