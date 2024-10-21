@@ -7,7 +7,7 @@ export default function ContactForm() {
   return (
     <section
       id="contact_form"
-      className="relative z-20 w-full bg-white pb-14 md:pb-20"
+      className="relative z-20 w-full bg-white py-14 md:py-20"
     >
       <div className="w-full container flex-between flex-col md:flex-row gap-10 md:gap-0">
         <div className="w-full">
