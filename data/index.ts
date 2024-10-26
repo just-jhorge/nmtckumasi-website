@@ -32,20 +32,20 @@ export const navigationLinks: NavigationLink[] = [
     subMenu: [
       {
         id: 301,
-        href: "#",
-        isAsset: true,
-        assetLocation: "/docs/entry-requirements.pdf",
-        label: "Entry Requirements",
-      },
-      {
-        id: 302,
         href: "/admissions/application-process",
         label: "Application Process",
       },
       {
-        id: 303,
+        id: 302,
         href: "/admissions/interview-details",
         label: "Interview Details",
+      },
+      {
+        id: 303,
+        href: "#",
+        isAsset: true,
+        assetLocation: "/docs/entry-requirements.pdf",
+        label: "Entry Requirements",
       },
     ],
   },
