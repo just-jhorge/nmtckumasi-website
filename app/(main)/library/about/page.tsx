@@ -5,14 +5,12 @@ import libraryBook from "../../../../public/images/library.jpg";
 export default function Page() {
   return (
     <>
-      <section className="sticky top-16 z-10 w-full bg-black h-40 md:h-80 center">
-        <div className="text-white left-0 right-0 mx-auto">
-          about the library
-        </div>
+      <section className="w-full bg-black h-40 md:h-80 center">
+        <div className="text-white">about the library</div>
       </section>
       <div className="relative z-20 bg-white py-20">
-        <section className="w-full min-h-[38rem] container grid grid-cols-3">
-          <div className="relative h-[38rem] rounded-bl-md rounded-tr-xl shadow-xl overflow-hidden">
+        <section className="w-full md:min-h-[38rem] container grid grid-cols-3">
+          <div className="hidden md:block relative h-[38rem] rounded-bl-md rounded-tr-xl shadow-xl overflow-hidden">
             <Image
               fill
               src={libraryBook}
@@ -20,7 +18,7 @@ export default function Page() {
               className="absolute object-cover"
             />
           </div>
-          <div className="col-span-2 center">
+          <div className="col-span-3 md:col-span-2 center">
             <div className="max-w-lg space-y-5">
               <h2 className="text-xl font-bold capitalize">
                 about the library

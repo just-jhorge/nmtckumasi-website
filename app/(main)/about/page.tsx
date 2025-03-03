@@ -5,8 +5,8 @@ export const metadata = {
 export default function Page() {
   return (
     <>
-      <section className="sticky top-16 z-10 w-full bg-black h-40 md:h-80 center">
-        <div className="text-white left-0 right-0 mx-auto">about us</div>
+      <section className="w-full bg-black h-40 md:h-80 center">
+        <div className="text-white">about us</div>
       </section>
       <div className="relative z-20 bg-white">
         <section
@@ -14,7 +14,9 @@ export default function Page() {
           className="w-full flex flex-col md:flex-row items-center h-[60rem] md:h-[50rem]"
         >
           <div className="w-full h-[30rem] md:h-full bg-red-500 center">
-            <div className="h-4/5 w-4/5 md:w-3/5 bg-blue-500">hello</div>
+            <div className="h-4/5 w-4/5 md:w-3/5 bg-blue-500">
+              principal image
+            </div>
           </div>
           <div className="w-full h-[30rem] md:h-full bg-white center">
             <div className="max-w-sm md:max-w-lg text-left md:text-center space-y-3 md:space-y-5">
@@ -91,7 +93,7 @@ export default function Page() {
           id="vision_mission_values"
           className="w-full py-10 md:py-20 center"
         >
-          <div className="w-full md:w-[56rem] bg-white px-4 md:px-0 grid grid-cols-1 gap-8 *:flex *:flex-col">
+          <div className="w-full md:w-[56rem] px-4 md:px-0 grid grid-cols-1 gap-8 *:flex *:flex-col">
             <div className="w-full items-start">
               <h3 className="text-4xl md:text-6xl font-extrabold text-emerald-700">
                 Vision
@@ -102,16 +104,16 @@ export default function Page() {
                 Ghana and beyond.
               </p>
             </div>
-            <div className="w-full items-end">
+            <div className="w-full md:items-end">
               <h3 className="text-4xl md:text-6xl font-extrabold text-emerald-700">
                 Mission
               </h3>
-              <p className="max-w-[17.5rem] text-sm md:text-base text-slate-800 text-right">
+              <p className="max-w-[17.5rem] text-sm md:text-base text-slate-800 md:text-right">
                 To train and turn out competent nursing and midwifery
                 professionals to restore, maintain and promote health.
               </p>
             </div>
-            <div className="w-full items-center">
+            <div className="w-full md:items-center">
               <div>
                 <h3 className="text-4xl md:text-6xl font-extrabold text-emerald-700">
                   Core Values

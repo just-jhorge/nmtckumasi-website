@@ -41,8 +41,8 @@ export default function Page() {
   ];
   return (
     <>
-      <section className="sticky top-16 z-10 w-full bg-black h-40 md:h-80 center">
-        <div className="text-white left-0 right-0 mx-auto">programmes</div>
+      <section className="w-full bg-black h-40 md:h-80 center">
+        <div className="text-white">programmes</div>
       </section>
       <div className="relative bg-white z-20 center flex-col">
         <section className="w-full h-full py-10 bg-slate-100 center">

@@ -1,3 +1,4 @@
+import ApplyButton from "@/components/shared/apply-button";
 import { Button } from "@/components/ui/button";
 import { BookOpenText, Calendar1 } from "lucide-react";
 
@@ -6,9 +7,14 @@ export default function Page() {
     <>
       <section
         id="header"
-        className="relative w-full h-[70dvh] md:h-[85dvh] bg-black"
+        className="relative flex items-center justify-center w-full h-[70dvh] md:h-[85dvh] bg-black"
       >
-        Header
+        <div className="absolute max-w-4xl flex items-center flex-col space-y-5 md:space-y-7">
+          <h2 className="text-center text-white text-3xl md:text-6xl font-black">
+            Nursing and Midwifery Training College, Kumasi
+          </h2>
+          <ApplyButton />
+        </div>
       </section>
       <section
         id="introduction"

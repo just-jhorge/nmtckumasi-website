@@ -7,7 +7,7 @@ export default function Page() {
     <section className="w-full h-[85dvh] center">
       <div className="center flex-col space-y-5">
         <Image src={comingSoon} alt="coming_soon" height={300} width={300} />
-        <p className="text-muted-foreground">Page coming soon...</p>
+        <p className="text-muted-foreground">Under construction...</p>
       </div>
     </section>
   );
