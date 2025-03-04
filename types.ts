@@ -28,3 +28,14 @@ export type FooterLink = {
   title: string;
   links: Omit<NavigationLink, "value">[];
 };
+
+export type Applicant = {
+  id: number;
+  pin: string;
+  applicant_name: string;
+  institution: string;
+  program: string;
+  program_type: string;
+  contact: string;
+  status: string;
+};

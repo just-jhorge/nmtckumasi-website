@@ -10,39 +10,58 @@ const Footer = () => {
       id: 1,
       title: "The College",
       links: [
-        { id: 101, href: "/", label: "About Us" },
-        { id: 102, href: "/", label: "Faculty & Staff" },
-        { id: 103, href: "/", label: "Contact Us" },
-        { id: 104, href: "/", label: "Privacy Policy" },
+        { id: 101, href: "/about", label: "About Us" },
+        { id: 102, href: "/academics/faculty-staff", label: "Faculty & Staff" },
+        { id: 103, href: "/contact-us", label: "Contact Us" },
       ],
     },
     {
       id: 2,
       title: "Admissions & Academics",
       links: [
-        { id: 201, href: "/", label: "Admissions" },
-        { id: 202, href: "/", label: "Entry Requirements" },
-        { id: 203, href: "/", label: "Courses & Programmes" },
-        { id: 204, href: "/", label: "FAQs" },
+        {
+          id: 201,
+          href: "/admissions/application-process",
+          label: "Admissions",
+        },
+        {
+          id: 202,
+          href: "/docs/entry-requirements.pdf",
+          label: "Entry Requirements",
+        },
+        {
+          id: 203,
+          href: "/academics/programmes",
+          label: "Courses & Programmes",
+        },
+        { id: 204, href: "/faqs", label: "FAQs" },
       ],
     },
     {
       id: 3,
       title: "Students & Alumini",
       links: [
-        { id: 301, href: "/", label: "Student Portal" },
-        { id: 302, href: "/", label: "E-Library" },
-        { id: 303, href: "/", label: "Career Opportunities" },
-        { id: 304, href: "/", label: "Alumini" },
+        {
+          id: 301,
+          href: "https://portal.healthtraining.gov.gh",
+          label: "Student Portal",
+        },
+        { id: 302, href: "/library/e-library", label: "E-Library" },
+        { id: 303, href: "/careers", label: "Career Opportunities" },
+        { id: 304, href: "/students-alumini/alumini", label: "Alumini" },
       ],
     },
     {
       id: 4,
       title: "News & Events",
       links: [
-        { id: 401, href: "/", label: "Latest News" },
-        { id: 402, href: "/", label: "Upcoming Events" },
-        { id: 403, href: "/", label: "Gallery" },
+        { id: 401, href: "/media/news", label: "Latest News" },
+        { id: 402, href: "/media/events", label: "Upcoming Events" },
+        {
+          id: 403,
+          href: "https://www.instagram.com/nmtckumasi",
+          label: "Gallery",
+        },
       ],
     },
   ];

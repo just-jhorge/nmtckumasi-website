@@ -80,7 +80,11 @@ export const navigationLinks: NavigationLink[] = [
     subMenu: [
       { id: 501, href: "/media/news", label: "News" },
       { id: 502, href: "/media/events", label: "Events" },
-      { id: 503, href: "/media/gallery", label: "Gallery" },
+      {
+        id: 503,
+        href: "https://www.instagram.com/nmtckumasi",
+        label: "Gallery",
+      },
     ],
   },
   {

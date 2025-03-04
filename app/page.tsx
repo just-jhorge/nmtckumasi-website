@@ -1,6 +1,9 @@
-import ApplyButton from "@/components/shared/apply-button";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import headerImage from "@/public/images/header.webp";
 import { BookOpenText, Calendar1 } from "lucide-react";
+import ApplyButton from "@/components/shared/apply-button";
+import LatestNews from "./_components/LatestNews";
 
 export default function Page() {
   return (
@@ -9,6 +12,12 @@ export default function Page() {
         id="header"
         className="relative flex items-center justify-center w-full h-[70dvh] md:h-[85dvh] bg-black"
       >
+        <Image
+          fill
+          src={headerImage}
+          alt="header_image"
+          className="absolute h-full w-full object-cover brightness-75"
+        />
         <div className="absolute max-w-4xl flex items-center flex-col space-y-5 md:space-y-7">
           <h2 className="text-center text-white text-3xl md:text-6xl font-black">
             Nursing and Midwifery Training College, Kumasi
@@ -96,23 +105,58 @@ export default function Page() {
           </Button>
         </div>
       </section>
+      <LatestNews />
       <section
         id="home_gallery"
-        className="w-full h-[40rem] md:h-[30rem] bg-white grid grid-cols-2 md:grid-cols-6 grid-rows-12 gap-1.5 md:gap-3 *:cursor-pointer"
+        className="w-full h-[40rem] md:h-[30rem] bg-white grid grid-cols-2 md:grid-cols-6 grid-rows-12 gap-2"
       >
-        <div className="bg-green-500 row-span-3 md:row-span-4">1</div>
-        <div className="bg-green-500 row-span-3 md:row-span-4">2</div>
-        <div className="bg-green-500 col-span-2 row-span-3 md:row-span-5">
-          3
+        <div className="relative bg-muted row-span-3 md:row-span-4">
+          <Image
+            fill
+            src={headerImage}
+            alt="mansory_images"
+            className="absolute h-full w-full object-cover"
+          />
         </div>
-        <div className="bg-green-500 md:col-span-2 row-span-3 md:row-span-12">
-          4
+        <div className="relative bg-muted row-span-3 md:row-span-4">
+          <Image
+            fill
+            src={headerImage}
+            alt="mansory_images"
+            className="absolute h-full w-full object-cover"
+          />
         </div>
-        <div className="bg-green-500 md:col-span-2 row-span-3 md:row-span-8">
-          5
+        <div className="relative bg-muted col-span-2 row-span-3 md:row-span-5">
+          <Image
+            fill
+            src={headerImage}
+            alt="mansory_images"
+            className="absolute h-full w-full object-cover"
+          />
         </div>
-        <div className="bg-green-500 col-span-2 row-span-3 md:row-span-7">
-          6
+        <div className="relative bg-muted md:col-span-2 row-span-3 md:row-span-12">
+          <Image
+            fill
+            src={headerImage}
+            alt="mansory_images"
+            className="absolute h-full w-full object-cover"
+          />
+        </div>
+        <div className="relative bg-muted md:col-span-2 row-span-3 md:row-span-8">
+          <Image
+            fill
+            src={headerImage}
+            alt="mansory_images"
+            className="absolute h-full w-full object-cover"
+          />
+        </div>
+        <div className="relative bg-muted col-span-2 row-span-3 md:row-span-7">
+          <Image
+            fill
+            src={headerImage}
+            alt="mansory_images"
+            className="absolute h-full w-full object-cover"
+          />
         </div>
       </section>
     </>

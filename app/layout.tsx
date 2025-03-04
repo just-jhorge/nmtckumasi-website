@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import "../styles/globals.css";
+import { Navbar } from "@/components/shared/navbar";
+import ContactForm from "@/components/shared/contact-form";
+import { Footer } from "@/components/shared/footer";
 
 export const metadata: Metadata = {
   title: {
@@ -17,7 +20,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-inter">{children}</body>
+      <body>
+        <Navbar />
+        <main>
+          {children}
+          <ContactForm />
+        </main>
+        <Footer />
+      </body>
     </html>
   );
 }
