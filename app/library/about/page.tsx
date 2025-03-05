@@ -1,6 +1,5 @@
 import Image from "next/image";
-import React from "react";
-import libraryBook from "../../../../public/images/library.jpg";
+import libraryBook from "@/public/images/library.jpg";
 
 export default function Page() {
   return (

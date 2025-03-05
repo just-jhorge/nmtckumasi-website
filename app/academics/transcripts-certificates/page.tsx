@@ -1,5 +1,5 @@
 import React from "react";
-import comingSoon from "../../../../public/images/comingSoon.png";
+import comingSoon from "@/public/images/comingSoon.png";
 import Image from "next/image";
 
 export default function Page() {

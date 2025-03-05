@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import "../styles/globals.css";
 import { Navbar } from "@/components/shared/navbar";
-import ContactForm from "@/components/shared/contact-form";
 import { Footer } from "@/components/shared/footer";
+import ContactForm from "@/components/shared/contact-form";
+
+import "../styles/globals.css";
 
 export const metadata: Metadata = {
   title: {

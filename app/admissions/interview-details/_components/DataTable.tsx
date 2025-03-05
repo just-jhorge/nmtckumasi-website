@@ -22,7 +22,7 @@ import {
 
 import * as React from "react";
 import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+import { DataTablePagination } from "./DataTablePagination";
 
 interface DataTableProps<TData, TValue> {
   data: TData[];
@@ -113,24 +113,7 @@ export function DataTable<TData, TValue>({
           </TableBody>
         </Table>
       </div>
-      <div className="flex items-center justify-end space-x-2 py-4">
-        <Button
-          variant="outline"
-          size="sm"
-          onClick={() => table.previousPage()}
-          disabled={!table.getCanPreviousPage()}
-        >
-          Previous
-        </Button>
-        <Button
-          variant="outline"
-          size="sm"
-          onClick={() => table.nextPage()}
-          disabled={!table.getCanNextPage()}
-        >
-          Next
-        </Button>
-      </div>
+      <DataTablePagination table={table} />
     </>
   );
 }

@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import LatestNews from "./_components/LatestNews";
 import headerImage from "@/public/images/header.webp";
 import { BookOpenText, Calendar1 } from "lucide-react";
 import ApplyButton from "@/components/shared/apply-button";
-import LatestNews from "./_components/LatestNews";
 
 export default function Page() {
   return (
