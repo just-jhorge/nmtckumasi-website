@@ -10,8 +10,8 @@ export default function ApplicationsTabs() {
   return (
     <Tabs defaultValue="applications" className="w-full">
       <TabsList className="grid grid-cols-2 w-full md:max-w-lg">
-        <TabsTrigger value="applications">Application status</TabsTrigger>
-        <TabsTrigger value="interview_dates">Interview dates</TabsTrigger>
+        <TabsTrigger value="applications">APPLICATION STATUS</TabsTrigger>
+        <TabsTrigger value="interview_dates">INTERVIEW DATES</TabsTrigger>
       </TabsList>
       <TabsContent value="applications">
         <DataTable columns={admissionStatusColumn} data={applicants} />
