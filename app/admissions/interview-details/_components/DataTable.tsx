@@ -33,7 +33,6 @@ export function DataTable<TData, TValue>({
   data,
   columns,
 }: DataTableProps<TData, TValue>) {
-  const tableRef = React.useRef<HTMLDivElement>(null);
   const [sorting, setSorting] = React.useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
     []
@@ -52,19 +51,8 @@ export function DataTable<TData, TValue>({
     initialState: { pagination: { pageSize: 50 } },
   });
 
-  const { pageIndex } = table.getState().pagination;
-
-  React.useEffect(() => {
-    if (tableRef.current) {
-      tableRef.current.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  }, [pageIndex]);
-
   return (
-    <div ref={tableRef} style={{ paddingTop: "65px", marginTop: "-65px" }}>
+    <>
       <div className="flex items-center justify-end py-2">
         <Input
           placeholder="Search pin..."
@@ -126,6 +114,6 @@ export function DataTable<TData, TValue>({
         </Table>
       </div>
       <DataTablePagination table={table} />
-    </div>
+    </>
   );
 }
