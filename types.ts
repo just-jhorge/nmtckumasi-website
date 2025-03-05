@@ -39,3 +39,11 @@ export type Applicant = {
   contact: string;
   status: string;
 };
+
+export type InterviewDate = {
+  id: number;
+  pin: string;
+  applicant_name: string;
+  program: string;
+  date: string;
+};

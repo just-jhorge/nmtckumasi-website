@@ -2,6 +2,7 @@
 
 import { applicants } from "@/data/applicants";
 import { DataTable } from "./_components/DataTable";
+import { interviewDates } from "@/data/interview_dates";
 import { interviewDatesColumn } from "./_components/InterviewDatesColumn";
 import { admissionStatusColumn } from "./_components/AdmissionStatusColumn";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -17,7 +18,7 @@ export default function ApplicationsTabs() {
         <DataTable columns={admissionStatusColumn} data={applicants} />
       </TabsContent>
       <TabsContent value="interview_dates">
-        <DataTable columns={interviewDatesColumn} data={applicants} />
+        <DataTable columns={interviewDatesColumn} data={interviewDates} />
       </TabsContent>
     </Tabs>
   );

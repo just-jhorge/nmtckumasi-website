@@ -1,9 +1,10 @@
 "use client";
 
-import { Applicant } from "@/types";
+import { formattedDate } from "@/lib/utils";
+import { InterviewDate } from "@/types";
 import { ColumnDef } from "@tanstack/react-table";
 
-export const interviewDatesColumn: ColumnDef<Applicant>[] = [
+export const interviewDatesColumn: ColumnDef<InterviewDate>[] = [
   {
     accessorKey: "id",
     header: "ID",
@@ -31,8 +32,17 @@ export const interviewDatesColumn: ColumnDef<Applicant>[] = [
     },
   },
   {
-    accessorKey: "interview_date",
+    accessorKey: "date",
     header: "INTERVIEW DATE",
-    cell: () => <p className="text-nowrap min-w-[120px]">Mon 17 Feb 2025</p>,
+    cell: ({ row }) => {
+      const date = row.getValue("date") as string;
+      const interviewDate = new Date(date);
+
+      return (
+        <p className="text-nowrap min-w-[120px]">
+          {formattedDate(interviewDate)}
+        </p>
+      );
+    },
   },
 ];
