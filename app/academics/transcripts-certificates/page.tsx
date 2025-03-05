@@ -1,6 +1,11 @@
 import React from "react";
-import comingSoon from "@/public/images/comingSoon.png";
 import Image from "next/image";
+import comingSoon from "@/public/images/comingSoon.png";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Transcripts & Certificates",
+};
 
 export default function Page() {
   return (

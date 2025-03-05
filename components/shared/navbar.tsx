@@ -22,7 +22,7 @@ import { AlignJustify, ChevronDown } from "lucide-react";
 
 const Navbar = () => {
   return (
-    <nav className="sticky top-0 z-50 w-full bg-red-500 h-16 center border-b border-input shadow-sm">
+    <nav className="sticky top-0 z-50 w-full bg-white h-16 center border-b border-input shadow-sm">
       <div className="container flex-between">
         <Link href="/" className="flex items-center gap-1">
           <Image src={schoolLogo} alt="logo" height={48} width={43} />
