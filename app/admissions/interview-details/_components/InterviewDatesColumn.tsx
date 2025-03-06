@@ -1,8 +1,9 @@
 "use client";
 
-import { formattedDate } from "@/lib/utils";
+import { format } from "date-fns";
 import { InterviewDate } from "@/types";
 import { ColumnDef } from "@tanstack/react-table";
+import InterviewInfoButton from "./InterviewInfoButton";
 
 export const interviewDatesColumn: ColumnDef<InterviewDate>[] = [
   {
@@ -36,12 +37,25 @@ export const interviewDatesColumn: ColumnDef<InterviewDate>[] = [
     header: "INTERVIEW DATE",
     cell: ({ row }) => {
       const date = row.getValue("date") as string;
-      const interviewDate = new Date(date);
+      const intDate = format(new Date(date), "EEEE, do MMMM, yyyy");
+
+      return <p className="text-nowrap min-w-[120px]">{intDate}</p>;
+    },
+  },
+  {
+    id: "action",
+    cell: ({ row }) => {
+      const date = row.getValue("date") as string;
+      const applicantName = row.getValue("applicant_name") as string;
+      const interviewDate = format(new Date(date), "EEEE, do MMMM, yyyy");
 
       return (
-        <p className="text-nowrap min-w-[120px]">
-          {formattedDate(interviewDate)}
-        </p>
+        <div className="flex justify-end">
+          <InterviewInfoButton
+            interviewDate={interviewDate}
+            applicantName={applicantName}
+          />
+        </div>
       );
     },
   },

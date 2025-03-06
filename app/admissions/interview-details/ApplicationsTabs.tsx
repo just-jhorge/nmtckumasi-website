@@ -2,7 +2,7 @@
 
 import { applicants } from "@/data/applicants";
 import { DataTable } from "./_components/DataTable";
-import { interviewDates } from "@/data/interview_dates";
+import { interviewDates } from "@/data/interviewDates";
 import { interviewDatesColumn } from "./_components/InterviewDatesColumn";
 import { admissionStatusColumn } from "./_components/AdmissionStatusColumn";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";

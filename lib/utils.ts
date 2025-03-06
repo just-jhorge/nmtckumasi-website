@@ -15,3 +15,12 @@ export function formattedDate(date: Date) {
 
   return formattedDate;
 }
+
+export function formatCurrency(amount: number) {
+  const formatter = new Intl.NumberFormat("en-GH", {
+    style: "currency",
+    currency: "GHS",
+  });
+
+  return formatter.format(amount);
+}
