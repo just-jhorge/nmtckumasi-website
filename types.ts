@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 interface BaseLink {
   id: number;
   href: string;
@@ -46,4 +48,11 @@ export type InterviewDate = {
   applicant_name: string;
   program: string;
   date: string;
+};
+
+export type Resource = {
+  name: string;
+  subjects: string[];
+  href: string;
+  imageSrc: StaticImageData;
 };
