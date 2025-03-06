@@ -4,19 +4,28 @@ import * as React from "react";
 import { Button } from "@/components/ui/button";
 import InterviewInfoDialog from "./InterviewInfoDialog";
 
-const InterviewInfoButton = () => {
+interface InterviewInfoButtonProps {
+  interviewDate: string;
+  applicantName: string;
+}
+
+const InterviewInfoButton = ({
+  interviewDate,
+  applicantName,
+}: InterviewInfoButtonProps) => {
   const [showDialog, setShowDialog] = React.useState(false);
 
   return (
     <>
-      <Button
-        size="sm"
-        className="rounded-sm"
-        onClick={() => setShowDialog(true)}
-      >
+      <Button size="sm" onClick={() => setShowDialog(true)}>
         Read more
       </Button>
-      <InterviewInfoDialog open={showDialog} onOpenChange={setShowDialog} />
+      <InterviewInfoDialog
+        open={showDialog}
+        onOpenChange={setShowDialog}
+        applicantName={applicantName}
+        interviewDate={interviewDate}
+      />
     </>
   );
 };

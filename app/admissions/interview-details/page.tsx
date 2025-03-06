@@ -1,5 +1,5 @@
 import { DataTable } from "./_components/DataTable";
-import { interviewDates } from "@/data/interview_dates";
+import { interviewDates } from "@/data/interviewDates";
 import { interviewDatesColumn } from "./_components/InterviewDatesColumn";
 
 export default function Page() {

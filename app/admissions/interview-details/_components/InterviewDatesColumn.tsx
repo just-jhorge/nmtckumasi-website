@@ -44,10 +44,19 @@ export const interviewDatesColumn: ColumnDef<InterviewDate>[] = [
   },
   {
     id: "action",
-    cell: () => (
-      <div className="flex justify-end">
-        <InterviewInfoButton />
-      </div>
-    ),
+    cell: ({ row }) => {
+      const date = row.getValue("date") as string;
+      const applicantName = row.getValue("applicant_name") as string;
+      const interviewDate = format(new Date(date), "EEEE, do MMMM, yyyy");
+
+      return (
+        <div className="flex justify-end">
+          <InterviewInfoButton
+            interviewDate={interviewDate}
+            applicantName={applicantName}
+          />
+        </div>
+      );
+    },
   },
 ];
