@@ -13,16 +13,6 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Attendee {
-  id      String @unique
-  name    String
-  eventId Int
-
-  event Event @relation(fields: [eventId], references: [id], onDelete: Cascade)
-
-  @@map("attendee")
-}
-
 model News {
   id        Int      @id @default(autoincrement())
   title     String
@@ -45,8 +35,6 @@ model Event {
   endDate     DateTime?
   location    String
   createdAt   String
-
-  attendees Attendee[]
 
   @@map("events")
 }
