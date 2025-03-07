@@ -28,7 +28,7 @@ export default function ContactForm() {
                   <h4 className="font-black tracking-wider">
                     NURSING AND MIDWIFERY
                   </h4>
-                  <p className="tracking-wide">Trainging College, Kumasi</p>
+                  <p className="tracking-wide">Training College, Kumasi</p>
                 </div>
                 <h4 className="font-medium text-sm md:text-base">
                   ENTER TO LEARN, GO OUT TO SERVE!
