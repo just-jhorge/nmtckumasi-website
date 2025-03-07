@@ -98,7 +98,7 @@ const Navbar = () => {
                 link.subMenu ? (
                   <Collapsible key={link.id} className="w-[350px] space-y-2">
                     <div className="flex items-center justify-between">
-                      <CollapsibleTrigger asChild className="w-full">
+                      <CollapsibleTrigger asChild>
                         <div className="flex items-center gap-1">
                           <span className="text-xl">{link.label}</span>
                           <ChevronDown className="h-4 w-4 text-muted-foreground ml-2" />
