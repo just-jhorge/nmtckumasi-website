@@ -4,8 +4,8 @@ import libraryBook from "@/public/images/library.jpg";
 export default function Page() {
   return (
     <>
-      <section className="w-full bg-black h-40 md:h-80 center">
-        <div className="text-white">about the library</div>
+      <section className="w-full bg-black h-40 center">
+        <div className="text-white">About the Library</div>
       </section>
       <section className="w-full bg-white h-[45rem] flex flex-col md:flex-row">
         <div className="relative h-2/5 md:h-full flex-1">

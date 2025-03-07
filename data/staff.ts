@@ -90,3 +90,48 @@ export const management = [
     image: mary,
   },
 ];
+
+export const srcExecutives = [
+  {
+    position: "SRC President",
+    name: "John Doe",
+    email: "john.doe@email.com",
+    image: alex,
+  },
+  {
+    position: "1st Deputy President",
+    name: "John Doe",
+    email: "john.doe@email.com",
+    image: mary,
+  },
+  {
+    position: "2nd Deputy President",
+    name: "John Doe",
+    email: "john.doe@email.com",
+    image: mary,
+  },
+  {
+    position: "SRC General Secretary",
+    name: "John Doe",
+    email: "john.doe@email.com",
+    image: mary,
+  },
+  {
+    position: "SRC Financial Secretary",
+    name: "John Doe",
+    email: "john.doe@email.com",
+    image: alex,
+  },
+  {
+    position: "Women's Commissioner",
+    name: "John Doe",
+    email: "john.doe@email.com",
+    image: mary,
+  },
+  {
+    position: "Sanitation Prefect",
+    name: "John Doe",
+    email: "john.doe@email.com",
+    image: alex,
+  },
+];

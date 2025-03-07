@@ -58,15 +58,21 @@ export default function Page() {
         <div className="h-full col-span-2 grid grid-cols-1 text-white *:px-10 *:md:px-16 *:py-12 *:flex *:flex-col *:items-start *:justify-center">
           <div className="bg-yellow-300">
             <h4 className="text-2xl">01.</h4>
-            <h1 className="text-3xl font-extrabold">FINANCIAL AID</h1>
+            <h1 className="text-xl md:text-3xl font-extrabold">
+              QUALITY EDUCATION
+            </h1>
           </div>
           <div className="bg-black">
             <h4 className="text-2xl">02.</h4>
-            <h1 className="text-3xl font-extrabold">PROGRAMMES</h1>
+            <h1 className="text-xl md:text-3xl font-extrabold">
+              EXPERIENCED FACULTY
+            </h1>
           </div>
           <div className="bg-green-600">
             <h4 className="text-2xl">03.</h4>
-            <h1 className="text-3xl font-extrabold">STUDENT SERVICES</h1>
+            <h1 className="text-xl md:text-3xl font-extrabold">
+              CLINICAL EXCELLENCE
+            </h1>
           </div>
         </div>
       </section>

@@ -58,7 +58,7 @@ export const navigationLinks: NavigationLink[] = [
       {
         id: 401,
         href: "/library/about",
-        label: "About the Library",
+        label: "The Library",
       },
       {
         id: 402,
