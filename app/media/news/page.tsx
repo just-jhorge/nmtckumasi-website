@@ -1,5 +1,9 @@
-import React from "react";
+import News from "./News";
 
 export default function Page() {
-  return <div>Page</div>;
+  return (
+    <section className="min-h-[85dvh]">
+      <News />
+    </section>
+  );
 }

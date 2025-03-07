@@ -14,12 +14,15 @@ const Events = () => {
 
   if (isLoading)
     return (
-      <>
-        <section className="w-full bg-black h-40 center">
-          <div className="text-white">Upcoming Events</div>
-        </section>
+      <div className="container py-4 space-y-5">
+        <div>
+          <h2 className="text-3xl font-bold">Upcoming Events</h2>
+          <p className="text-lg text-muted-foreground">
+            Discover and join exciting events coming up.
+          </p>
+        </div>
         <Loading />
-      </>
+      </div>
     );
 
   if (error) {
@@ -32,13 +35,8 @@ const Events = () => {
     return <p>No data found</p>;
   }
 
-  console.log(data);
-
   return (
-    <div className="container space-y-5 py-7">
-      {/* <section className="w-full bg-black h-40 center">
-        <div className="text-white">Upcoming Events</div>
-      </section> */}
+    <div className="container space-y-5 py-4">
       <div>
         <h2 className="text-3xl font-bold">Upcoming Events</h2>
         <p className="text-lg text-muted-foreground">
