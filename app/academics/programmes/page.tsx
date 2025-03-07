@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <section className="w-full bg-black h-40 md:h-80 center">
+      <section className="w-full bg-black h-40 center">
         <div className="text-white">programs</div>
       </section>
       <div className="relative bg-white z-20 center flex-col">

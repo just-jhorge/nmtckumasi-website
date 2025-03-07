@@ -4,6 +4,7 @@ import { Footer } from "@/components/shared/footer";
 import ContactForm from "@/components/shared/contact-form";
 
 import "../styles/globals.css";
+import ReactQueryProvider from "@/providers/ReactQueryProvider";
 
 export const metadata: Metadata = {
   title: {
@@ -22,12 +23,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />
-        <main>
-          {children}
-          <ContactForm />
-        </main>
-        <Footer />
+        <ReactQueryProvider>
+          <Navbar />
+          <main>
+            {children}
+            <ContactForm />
+          </main>
+          <Footer />
+        </ReactQueryProvider>
       </body>
     </html>
   );

@@ -1,5 +1,5 @@
-import React from "react";
+import Events from "./Events";
 
 export default function Page() {
-  return <div>Page</div>;
+  return <Events />;
 }
