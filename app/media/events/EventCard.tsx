@@ -37,7 +37,7 @@ const EventCard = ({ event }: EventCardProps) => {
   return (
     <Card
       key={event.id}
-      className="overflow-hidden rounded-md shadow-sm flex flex-row md:flex-col h-full"
+      className="overflow-hidden rounded-md text-sm md:text-base shadow-sm flex flex-row md:flex-col h-full"
     >
       <div className="w-full bg-emerald-100">
         <CardHeader className="pb-2">
@@ -90,7 +90,7 @@ const EventCard = ({ event }: EventCardProps) => {
                   />
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 text-sm md:text-base">
                   <div className="space-y-2">
                     <div className="flex items-center gap-2">
                       <Calendar className="h-4 w-4 text-muted-foreground" />
@@ -129,7 +129,9 @@ const EventCard = ({ event }: EventCardProps) => {
                 <Separator />
                 <div>
                   <h3 className="font-medium mb-2">About this event</h3>
-                  <p className="text-muted-foreground">{event.description}</p>
+                  <p className="text-muted-foreground text-sm md:text-base">
+                    {event.description}
+                  </p>
                 </div>
 
                 {/* <div>
