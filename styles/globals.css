@@ -7,6 +7,10 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 article {
   @apply mb-3;
 }

@@ -9,9 +9,11 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <section className="w-full bg-black h-40 center">
-        <div className="text-white">programs</div>
-      </section>
+      <div className="w-full bg-black h-40 center">
+        <div className="text-white text-lg md:text-xl font-semibold">
+          Programs
+        </div>
+      </div>
       <div className="relative bg-white z-20 center flex-col">
         <section className="w-full h-full py-10 center">
           <div className="w-full md:w-[75rem] h-auto md:h-[15rem] grid grid-cols-1 md:grid-cols-2 gap-5 px-5 md:px-0 *:bg-white *:shadow-md *:border *:border-input *:rounded-md *:p-8">

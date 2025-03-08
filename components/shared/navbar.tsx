@@ -93,25 +93,25 @@ const Navbar = () => {
               <Separator />
               <SheetDescription />
             </SheetHeader>
-            <div className="py-4 flex flex-col items-start space-y-4 mt-5">
+            <div className="py-4 flex flex-col items-start space-y-5 mt-5">
               {navigationLinks.map((link) =>
                 link.subMenu ? (
                   <Collapsible key={link.id} className="w-[350px] space-y-2">
                     <div className="flex items-center justify-between">
                       <CollapsibleTrigger asChild>
-                        <div className="flex items-center">
-                          {link.label}{" "}
+                        <div className="flex items-center gap-1">
+                          <span className="text-xl">{link.label}</span>
                           <ChevronDown className="h-4 w-4 text-muted-foreground ml-2" />
                         </div>
                       </CollapsibleTrigger>
                     </div>
-                    <CollapsibleContent className="flex flex-col items-start space-y-2 transition-all duration-150 border-l border-input pl-5">
+                    <CollapsibleContent className="flex flex-col items-start space-y-3 transition-all duration-150 border-l border-input pl-5">
                       {link.subMenu.map((link) => (
                         <SheetClose key={link.id} asChild>
                           {link.isAsset ? (
                             <a
                               href={link.assetLocation}
-                              className="text-sm text-muted-foreground"
+                              className="text-xl text-muted-foreground"
                               download={`${link.label
                                 .toLowerCase()
                                 .split(" ")
@@ -125,7 +125,7 @@ const Navbar = () => {
                           ) : (
                             <Link
                               href={link.href}
-                              className="text-sm text-muted-foreground"
+                              className="text-lg text-muted-foreground"
                             >
                               {link.label}
                             </Link>
@@ -136,7 +136,9 @@ const Navbar = () => {
                   </Collapsible>
                 ) : (
                   <SheetClose key={link.id} asChild>
-                    <Link href={link.href}>{link.label}</Link>
+                    <Link href={link.href} className="text-xl">
+                      {link.label}
+                    </Link>
                   </SheetClose>
                 )
               )}

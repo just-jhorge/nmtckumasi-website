@@ -11,9 +11,11 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <section className="w-full bg-black h-40 center">
-        <div className="text-white">Meet the Team</div>
-      </section>
+      <div className="w-full bg-black h-40 center">
+        <div className="text-white text-lg md:text-xl font-semibold">
+          Meet the Team
+        </div>
+      </div>
       <div className="relative z-20 bg-white py-10 space-y-10">
         <div className="container space-y-10">
           <h2 className="text-center font-bold text-lg md:text-2xl">
