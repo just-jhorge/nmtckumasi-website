@@ -1,5 +1,7 @@
 "use client";
 
+import NewsCard from "./NewsCard";
+
 const News = () => {
   return (
     <div className="container space-y-5 py-4">
@@ -9,7 +11,13 @@ const News = () => {
           Read the latest news on campus.
         </p>
       </div>
-      <section>News page</section>
+      <section className="w-full">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5">
+          {[...new Array(17)].map((_, idx) => (
+            <NewsCard key={idx} />
+          ))}
+        </div>
+      </section>
     </div>
   );
 };
