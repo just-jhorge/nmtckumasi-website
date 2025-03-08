@@ -27,8 +27,16 @@ export default function Page() {
           </div>
         </article>
       </section>
-      <section className="w-full py-5 md:py-10">
-        <div className="container grid grid-cols-1 md:grid-cols-3 gap-10">
+      <section className="container w-full py-5 space-y-10 md:py-10">
+        <div className="text-center max-w-xl space-y-2 mx-auto">
+          <h3 className="text-xl md:text-2xl font-bold">E-Resources</h3>
+          <p className="text-sm md:text-lg text-muted-foreground">
+            Access a wide range of digital learning materials, including
+            e-books, research databases, journals, and study guides to support
+            your academic journey.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <Link href="/library/e-library/e-books">
             <div className="w-full space-y-3">
               <div className="relative rounded-md overflow-hidden w-full aspect-video bg-muted">
