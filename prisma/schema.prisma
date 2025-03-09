@@ -16,6 +16,7 @@ datasource db {
 model News {
   id        Int      @id @default(autoincrement())
   title     String
+  slug      String
   author    String?  @default("Anonymous")
   published Boolean  @default(false)
   content   String
