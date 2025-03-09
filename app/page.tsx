@@ -1,9 +1,10 @@
 import Image from "next/image";
+import { BookOpenText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import LatestNews from "./_components/LatestNews";
 import headerImage from "@/public/images/header.webp";
-import { BookOpenText, Calendar1 } from "lucide-react";
 import ApplyButton from "@/components/shared/apply-button";
+import UpcomingEvents from "./_components/UpcomingEvents";
 
 export default function Page() {
   return (
@@ -95,22 +96,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="events" className="w-full bg-emerald-50 py-24">
-        <div className="container center flex-col space-y-10">
-          <h2 className="font-extrabold text-2xl md:text-4xl text-emerald-900">
-            Upcoming Events
-          </h2>
-          <div className="w-full">
-            <p className="text-muted-foreground text-center">
-              There are not events at the moment
-            </p>
-          </div>
-          <Button size="lg">
-            <Calendar1 className="mr-2" size={20} />
-            See all events
-          </Button>
-        </div>
-      </section>
+      <UpcomingEvents />
       <LatestNews />
       <section
         id="home_gallery"

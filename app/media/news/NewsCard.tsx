@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import placeholder from "@/public/images/placeholder.svg";
+import Link from "next/link";
 
 const NewsCard = () => {
   return (
@@ -27,8 +28,8 @@ const NewsCard = () => {
             expedita eius nam iusto libero nostrum rem beatae cum ab odio.
           </p>
         </div>
-        <Button size="sm" className="w-full rounded-md">
-          Read more
+        <Button asChild size="sm" className="w-full rounded-md">
+          <Link href={`/media/news/some-news-article`}>Read more</Link>
         </Button>
       </div>
     </div>

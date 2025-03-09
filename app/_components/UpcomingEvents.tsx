@@ -1,22 +1,22 @@
 "use client";
 
+import { Calendar1 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { BookOpen } from "lucide-react";
 import Link from "next/link";
 
-export default function LatestNews() {
+const UpcomingEvents = () => {
   const isMobile = useIsMobile();
 
   return (
-    <section id="events" className="w-full py-10">
+    <section id="events" className="w-full bg-emerald-50 py-10">
       <div className="container center flex-col text-center space-y-10">
         <div className="space-y-5">
-          <h2 className="font-extrabold text-2xl md:text-4xl text-emerald-900">
-            Latest News
+          <h2 className="font-extrabold text-xl md:text-2xl text-emerald-900">
+            Upcoming Events
           </h2>
           <p className="text-sm md:text-base text-muted-foreground">
-            No items found
+            There are not events at the moment
           </p>
         </div>
         <Button
@@ -24,12 +24,14 @@ export default function LatestNews() {
           className="text-sm md:text-base"
           size={isMobile ? "default" : "lg"}
         >
-          <Link href="/media/news">
-            <BookOpen className="mr-2 size-5" />
-            Read more
+          <Link href="/media/events">
+            <Calendar1 className="mr-2 size-5" />
+            See all events
           </Link>
         </Button>
       </div>
     </section>
   );
-}
+};
+
+export default UpcomingEvents;
