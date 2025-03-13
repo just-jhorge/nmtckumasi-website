@@ -1,5 +1,12 @@
 import mary from "@/public/images/mary.jpg";
 import alex from "@/public/images/alex.jpg";
+import president from "@/public/images/src/cas_president.jpg";
+import vice_president from "@/public/images/src/loa_vice_president.jpg";
+import financial_secretary from "@/public/images/src/abfo_financial_sec.jpg";
+import pro from "@/public/images/src/kok_pro.jpg";
+import vice_pro from "@/public/images/src/ea_vice_pro.jpg";
+import womens_commissioner from "@/public/images/src/eaak_womens_commissioner.jpg";
+import entertainment_chairperson from "@/public/images/src/las_entertainment.jpg";
 
 export const staff = [
   {
@@ -94,44 +101,38 @@ export const management = [
 export const srcExecutives = [
   {
     position: "SRC President",
-    name: "John Doe",
-    email: "john.doe@email.com",
-    image: alex,
+    name: "Clement Adjei Sarfo",
+    image: president,
   },
   {
-    position: "1st Deputy President",
-    name: "John Doe",
-    email: "john.doe@email.com",
-    image: mary,
+    position: "Vice President",
+    name: "Lucy Osei Akoto",
+    image: vice_president,
   },
   {
-    position: "2nd Deputy President",
-    name: "John Doe",
-    email: "john.doe@email.com",
-    image: mary,
+    position: "Financial Secretary",
+    name: "Francis Otis Appiah-Blankson",
+    image: financial_secretary,
   },
   {
-    position: "SRC General Secretary",
-    name: "John Doe",
-    email: "john.doe@email.com",
-    image: mary,
+    position: "Public Relations Officer (PRO)",
+    name: "Kelvin Osei Kuffour Andoh",
+    image: pro,
   },
+
   {
-    position: "SRC Financial Secretary",
-    name: "John Doe",
-    email: "john.doe@email.com",
-    image: alex,
+    position: "Vice Public Relations Officer (PRO)",
+    name: "Emelia Adogta",
+    image: vice_pro,
   },
   {
     position: "Women's Commissioner",
-    name: "John Doe",
-    email: "john.doe@email.com",
-    image: mary,
+    name: "Emmanuella Ama Asantewaa Kwanin",
+    image: womens_commissioner,
   },
   {
-    position: "Sanitation Prefect",
-    name: "John Doe",
-    email: "john.doe@email.com",
-    image: alex,
+    position: "Entertainment Chairperson",
+    name: "Louis Senior Agyemang",
+    image: entertainment_chairperson,
   },
 ];

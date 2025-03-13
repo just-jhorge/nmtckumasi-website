@@ -5,14 +5,13 @@ import Image, { StaticImageData } from "next/image";
 interface LeaderCardProps {
   position: string;
   name: string;
-  email: string;
   image: StaticImageData;
 }
 
-const LeaderCard = ({ position, name, email, image }: LeaderCardProps) => {
+const LeaderCard = ({ position, name, image }: LeaderCardProps) => {
   return (
-    <div key={email}>
-      <div className="relative w-full aspect-square bg-muted">
+    <div>
+      <div className="relative w-full aspect-square bg-muted rounded-md overflow-hidden">
         <Image
           fill
           src={image}
@@ -21,16 +20,12 @@ const LeaderCard = ({ position, name, email, image }: LeaderCardProps) => {
         />
       </div>
       <div className="pt-2">
-        <p className="text-xs font-light mb-1">{position}</p>
+        <p className="text-xs font-light mb-1 text-muted-foreground">
+          {position}
+        </p>
         <h3 className="text-primary font-semibold text-sm md:text-base">
           {name}
         </h3>
-        <a
-          href={`mailTo:${email}`}
-          className="text-xs md:text-sm underline text-muted-foreground underline-offset-1"
-        >
-          {email}
-        </a>
       </div>
     </div>
   );
