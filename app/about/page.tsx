@@ -8,12 +8,7 @@ export const metadata = {
 export default function Page() {
   return (
     <>
-      <div className="w-full bg-black h-40 center">
-        <div className="text-white text-lg md:text-xl font-semibold">
-          About Us
-        </div>
-      </div>
-      <section className="w-full bg-white h-[65rem] md:h-[50rem] flex flex-col md:flex-row">
+      <section className="w-full bg-white h-[65rem] md:h-[55rem] flex flex-col md:flex-row">
         <div className="relative h-1/2 md:h-full flex-1">
           <Image
             fill

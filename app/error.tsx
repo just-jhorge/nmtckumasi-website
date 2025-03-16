@@ -2,13 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 
-// import { useEffect } from "react";
-
 export default function Error() {
-  // useEffect(() => {
-  //   console.error(error);
-  // }, [error]);
-
   return (
     <main className="h-[85dvh] center">
       <div className="center flex-col space-y-2">

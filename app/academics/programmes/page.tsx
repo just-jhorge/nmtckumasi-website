@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { features } from "@/data";
-import { Separator } from "@/components/ui/separator";
+import FeatureCard from "./FeatureCard";
 
 export const metadata: Metadata = {
   title: "Programs",
@@ -8,11 +8,14 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <>
-      <div className="w-full bg-black h-40 center">
-        <div className="text-white text-lg md:text-xl font-semibold">
-          Programs
-        </div>
+    <div className="pt-10">
+      <div className="text-center">
+        <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl">
+          Programmes Offered
+        </h2>
+        <p className="text-muted-foreground md:text-xl">
+          The programmes currently offered at our College.
+        </p>
       </div>
       <div className="relative bg-white z-20 center flex-col">
         <section className="w-full h-full py-10 center">
@@ -28,20 +31,11 @@ export default function Page() {
         <section className="w-full p-5 md:p-20 center bg-muted">
           <div className="w-full md:w-[75rem] grid grid-cols-1 md:grid-cols-3 gap-5">
             {features.map((feature) => (
-              <div
-                key={feature.topic}
-                className="w-full min-h-[13rem] px-4 py-5 space-y-2 border border-input rounded-md shadow-md bg-white"
-              >
-                <h3 className="text-base font-medium">{feature.topic}</h3>
-                <Separator />
-                <p className="text-sm text-muted-foreground">
-                  {feature.content}
-                </p>
-              </div>
+              <FeatureCard key={feature.topic} feature={feature} />
             ))}
           </div>
         </section>
       </div>
-    </>
+    </div>
   );
 }

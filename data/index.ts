@@ -93,13 +93,13 @@ export const navigationLinks: NavigationLink[] = [
     label: "Students & Alumini",
     value: "students",
     subMenu: [
+      { id: 603, href: "/students-alumini/Alumini", label: "Alumini" },
+      { id: 602, href: "/students-alumini/campus-life", label: "Campus Life" },
       {
         id: 601,
         href: "/students-alumini/students-leadership",
         label: "Student Leadership",
       },
-      { id: 602, href: "/students-alumini/campus-life", label: "Campus Life" },
-      { id: 603, href: "/students-alumini/Alumini", label: "Alumini" },
     ],
   },
 ];

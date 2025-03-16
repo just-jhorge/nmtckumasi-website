@@ -12,7 +12,7 @@ const NewsDetails = () => {
       <div className="flex items-center gap-2">
         <Button asChild variant="outline" size="icon">
           <Link href="/media/news">
-            <ArrowLeft />
+            <ArrowLeft className="size-4" />
           </Link>
         </Button>
         <h3 className="text-lg font-semibold">News page</h3>
