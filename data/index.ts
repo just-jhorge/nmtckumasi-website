@@ -8,7 +8,7 @@ export const navigationLinks: NavigationLink[] = [
     label: "Academics",
     value: "academics",
     subMenu: [
-      { id: 201, href: "/academics/programmes", label: "Programmes" },
+      { id: 201, href: "/academics/programs", label: "Programs" },
       { id: 202, href: "/academics/faculty-staff", label: "Faculty & Staff" },
       {
         id: 203,

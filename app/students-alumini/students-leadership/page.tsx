@@ -22,8 +22,8 @@ export default function Page() {
                   A warm welcome to all prospective students
                 </p>
               </div>
-              <div className="space-y-3 md:space-y-4 text-sm md:text-base">
-                <div className="relative pl-6 border-l-4 border-input py-2 bg-muted">
+              <div className="space-y-3 md:space-y-4 text-sm md:text-base text-center">
+                <div className="relative pl-6 text-left border-l-4 border-input py-2 bg-muted">
                   <p className="italic text-base md:text-lg text-muted-foreground">
                     &quot;To all prospective students considering joining our
                     vibrant campus community, I extend a heartfelt welcome on
