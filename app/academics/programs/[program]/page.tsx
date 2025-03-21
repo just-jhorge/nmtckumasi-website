@@ -217,7 +217,7 @@ export default function Page({ params }: { params: { program: string } }) {
   return (
     <section className="container py-4">
       <div className="mb-8">
-        <Button variant="ghost" asChild>
+        <Button variant="secondary" asChild>
           <Link href="/academics/programs" className="flex items-center gap-2">
             <ArrowLeft className="h-4 w-4" />
             Back to Programs
