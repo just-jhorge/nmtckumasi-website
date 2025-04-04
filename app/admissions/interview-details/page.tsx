@@ -8,7 +8,14 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <section className="w-full py-5 md:py-10">
-      <div className="container max-w-4xl mx-auto">
+      <div className="container max-w-4xl mx-auto space-y-14">
+        <h2 className="text-center font-bold text-4xl">
+          ADMISSION FOR 2025/2026 ACADEMIC YEAR IS{" "}
+          <span className="text-destructive underline underline-offset-2">
+            NOT
+          </span>{" "}
+          OPENED YET!
+        </h2>
         <div className="text-sm md:text-base">
           <p className="mb-5">
             Dear <span className="font-bold">APPLICANT</span>,
