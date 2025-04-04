@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { ExternalLink } from "lucide-react";
+// import { ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Interview details",
@@ -9,14 +9,14 @@ export default function Page() {
   return (
     <section className="w-full py-5 md:py-10">
       <div className="container max-w-4xl mx-auto space-y-14">
-        <h2 className="text-center font-bold text-4xl">
+        <div className="py-40 text-center font-bold text-4xl">
           ADMISSION FOR 2025/2026 ACADEMIC YEAR IS{" "}
           <span className="text-destructive underline underline-offset-2">
             NOT
           </span>{" "}
           OPENED YET!
-        </h2>
-        <div className="text-sm md:text-base">
+        </div>
+        {/* <div className="text-sm md:text-base">
           <p className="mb-5">
             Dear <span className="font-bold">APPLICANT</span>,
           </p>
@@ -93,7 +93,7 @@ export default function Page() {
             </a>
             . Thank you and all the best.
           </p>
-        </div>
+        </div> */}
         {/* <DataTable columns={interviewDatesColumn} data={interviewDates} /> */}
       </div>
     </section>
