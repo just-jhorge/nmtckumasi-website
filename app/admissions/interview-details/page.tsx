@@ -1,6 +1,7 @@
 import { Metadata } from "next";
-import Link from "next/link";
-// import { ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import ApplyButton from "@/components/shared/apply-button";
+import { ClipboardCheck } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Interview details",
@@ -10,20 +11,19 @@ export default function Page() {
   return (
     <section className="w-full py-5 md:py-10">
       <div className="container max-w-4xl mx-auto space-y-14">
-        <div className="py-40 text-center space-y-3">
-          <h2 className="font-bold text-4xl">
+        <div className="py-40 text-center space-y-8">
+          <h2 className="font-bold text-2xl md:text-4xl">
             ADMISSION FOR 2025/2026 ACADEMIC YEAR IS NOW OPENED
           </h2>
-          <p>
-            Kindly click{" "}
-            <Link
-              className="underline underline-offset-2"
-              href="http://nmtckumasi.edu.gh/admissions/application-process"
-            >
-              here
-            </Link>{" "}
-            to learn the application process.
-          </p>
+          <div className="flex items-center justify-center gap-3">
+            <Button asChild variant="outline" className="text-sm">
+              <a download href="/docs/admission_requirements.docx">
+                <ClipboardCheck className="size-5 mr-2" />
+                View Eligibility
+              </a>
+            </Button>
+            <ApplyButton />
+          </div>
         </div>
         {/* <div className="text-sm md:text-base">
           <p className="mb-5">

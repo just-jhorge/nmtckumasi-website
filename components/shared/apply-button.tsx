@@ -1,27 +1,19 @@
 "use client";
 
 import Link from "next/link";
-import { cn } from "@/lib/utils";
+import { Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useIsMobile } from "@/hooks/use-mobile";
 
 export default function ApplyButton() {
-  const isMobile = useIsMobile();
-
   return (
-    <Button
-      asChild
-      size={isMobile ? "default" : "lg"}
-      className={cn(
-        "bg-emerald-700 hover:bg-emerald-800 transition-colors duration-300",
-        isMobile ? "text-sm" : ""
-      )}
-    >
+    <Button asChild>
       <Link
-        href="https://portal.healthtraining.gov.gh/application"
         target="_blank"
+        className="text-sm"
+        href="https://register.healthtraining.gov.gh/dashboard"
       >
-        APPLY TODAY
+        <Send className="size-5 mr-2" />
+        Apply Now
       </Link>
     </Button>
   );

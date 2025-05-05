@@ -143,14 +143,14 @@ export const admissionProcessSteps = [
     step: "01",
     title: "Purchase a voucher",
     description:
-      "The first step in your application is to purchase a voucher from an approved bank i.e GCB or ADB. The voucher can also be bought with mobile money. The voucher contains your SERIAL NUMBER as well as your MOH Pin.",
+      "The first step in your application is to purchase a voucher from M.O.H THE ADMISSIONS PORTAL. there are various payment methods including bank transfer and mobile money. The voucher contains your SERIAL NUMBER as well as your M.O.H Pin which will be used for the application.",
   },
   {
     id: 2,
     step: "02",
     title: "Fill online form",
     description:
-      "The next step is to fill your online application. Log on to the MOH portal by clicking on the start here link. Input the correct details and submit your application. Please make sure your application has been submitted successfully.",
+      "The next step is to fill your online application. Log in to the M.O.H portal to fill the online form. Input the correct details and submit your application. Please make sure your application has been submitted successfully.",
   },
   {
     id: 3,
