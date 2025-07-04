@@ -39,3 +39,12 @@ model Event {
 
   @@map("events")
 }
+
+model Interview {
+  id   String   @id @default(cuid())
+  pin  String   @unique
+  name String
+  date DateTime
+
+  @@map("interview_dates")
+}
