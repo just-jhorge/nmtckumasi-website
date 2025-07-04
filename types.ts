@@ -56,3 +56,10 @@ export type Resource = {
   href: string;
   imageSrc: StaticImageData;
 };
+
+export type InterviewDetails = {
+  id: number;
+  name: string;
+  pin: string;
+  date: Date;
+};

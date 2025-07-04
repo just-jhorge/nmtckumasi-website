@@ -5,6 +5,7 @@ import ContactForm from "@/components/shared/contact-form";
 
 import "../styles/globals.css";
 import ReactQueryProvider from "@/providers/ReactQueryProvider";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: {
@@ -31,6 +32,7 @@ export default function RootLayout({
           </main>
           <Footer />
         </ReactQueryProvider>
+        <Toaster position="top-right" richColors expand />
       </body>
     </html>
   );
