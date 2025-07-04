@@ -43,6 +43,10 @@ export default function InterviewDetailsModal({
               <td>{details.pin}</td>
             </tr>
             <tr>
+              <td className="font-bold">Program</td>
+              <td>{details.program}</td>
+            </tr>
+            <tr>
               <td className="font-bold">Interview Date</td>
               <td>{format(details.date, "do MMMM yyyy '@' 7:00'AM'")}</td>
             </tr>

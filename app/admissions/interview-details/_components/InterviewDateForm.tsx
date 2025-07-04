@@ -20,13 +20,6 @@ import InterviewDetailsModal from "./InterviewDetailsModal";
 import { InterviewDetails } from "@/types";
 import { useRouter } from "next/navigation";
 
-export type Applicant = {
-  id: number;
-  name: string;
-  pin: string;
-  date: Date;
-};
-
 export default function InterviewDateForm() {
   const router = useRouter();
   const [data, setData] = useState<InterviewDetails | undefined>(undefined);

@@ -60,6 +60,7 @@ export type Resource = {
 export type InterviewDetails = {
   id: number;
   name: string;
+  program: string;
   pin: string;
   date: Date;
 };
