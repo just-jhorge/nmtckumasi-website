@@ -8,7 +8,7 @@ export const navigationLinks: NavigationLink[] = [
     label: "Academics",
     value: "academics",
     subMenu: [
-      { id: 201, href: "/academics/programmes", label: "Programmes" },
+      { id: 201, href: "/academics/programs", label: "Programs" },
       { id: 202, href: "/academics/faculty-staff", label: "Faculty & Staff" },
       {
         id: 203,
@@ -93,13 +93,13 @@ export const navigationLinks: NavigationLink[] = [
     label: "Students & Alumini",
     value: "students",
     subMenu: [
+      { id: 603, href: "/students-alumini/Alumini", label: "Alumini" },
+      { id: 602, href: "/students-alumini/campus-life", label: "Campus Life" },
       {
         id: 601,
         href: "/students-alumini/students-leadership",
         label: "Student Leadership",
       },
-      { id: 602, href: "/students-alumini/campus-life", label: "Campus Life" },
-      { id: 603, href: "/students-alumini/Alumini", label: "Alumini" },
     ],
   },
 ];
