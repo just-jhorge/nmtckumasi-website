@@ -37,7 +37,9 @@ export default function Page() {
             <span className="font-bold">
               NURSING AND MIDWIFERY TRAINING COLLEGE, KUMASI
             </span>{" "}
-            has been scheduled successfully. Please take not of the following:
+            has been scheduled successfully. You can search for your interview
+            date by entering your MOH Pin in the search box above. Please take
+            not of the following:
           </p>
           <ol className="list-decimal pl-5 md:pl-4 my-5">
             <li>
@@ -57,7 +59,7 @@ export default function Page() {
               through any other means.
             </li>
             <li>
-              Unfortunately, accomodation <strong className="">cannot</strong>{" "}
+              Unfortunately, accomodation <strong className="">CANNOT</strong>{" "}
               be provided to applicants traveling from distant places. However
               priority will be given to such applicant so they can set off
               early.
@@ -100,7 +102,7 @@ export default function Page() {
           </table>
           <p className="mb-5">
             For any questions or concerns, kindly call us on{" "}
-            <span className="font-semibold">0553080825</span> or{" "}
+            <span className="font-semibold">0595323741</span> or{" "}
             <span className="font-semibold">0241385150</span> or send an email
             to{" "}
             <a
