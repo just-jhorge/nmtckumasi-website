@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Navbar } from "@/components/shared/navbar";
 import { Footer } from "@/components/shared/footer";
-import ContactForm from "@/components/shared/contact-form";
 
 import "../styles/globals.css";
 import ReactQueryProvider from "@/providers/ReactQueryProvider";
