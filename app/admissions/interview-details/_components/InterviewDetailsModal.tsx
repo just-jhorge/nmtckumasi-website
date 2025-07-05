@@ -34,10 +34,10 @@ export default function InterviewDetailsModal({
         </DialogHeader>
         <div className="grid gap-4">
           <table>
-            <tr>
+            {/* <tr>
               <td className="font-bold">Name</td>
               <td>{details.name}</td>
-            </tr>
+            </tr> */}
             <tr>
               <td className="font-bold">MOH Pin</td>
               <td>{details.pin}</td>
