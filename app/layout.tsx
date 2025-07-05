@@ -28,7 +28,7 @@ export default function RootLayout({
           <Navbar />
           <main>
             {children}
-            <ContactForm />
+            {/* <ContactForm /> */}
           </main>
           <Footer />
         </ReactQueryProvider>
