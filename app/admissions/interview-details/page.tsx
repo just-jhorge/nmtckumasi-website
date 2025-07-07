@@ -37,18 +37,33 @@ export default function Page() {
             <span className="font-bold">
               NURSING AND MIDWIFERY TRAINING COLLEGE, KUMASI
             </span>{" "}
-            has been scheduled successfully. You can search for your interview
-            date by entering your MOH Pin in the search box above. Please take
-            not of the following:
+            has been scheduled successfully. You can search for your{" "}
+            <strong>INTERVIEW DATE</strong> by entering your MOH Pin in the
+            search box above. Please take not of the following:
           </p>
           <ol className="list-decimal pl-5 md:pl-4 my-5">
             <li>
-              You are to come along with all relevant documents, i.e. COPY OF{" "}
-              <span className="font-bold">BIRTH CERTIFICATE</span>, COPY OF{" "}
-              <span className="font-bold">MOH APPLICATION FORM</span>, COPY OF{" "}
-              <span className="font-bold">WASSCE CERTIFICATE</span> OR{" "}
-              <span className="font-bold">RESULTS SLIP</span> and any other
-              relevant document.
+              You are to come along with all relevant documents, i.e.{" "}
+              <span className="font-bold underline underline-offset-2">
+                ORIGINAL
+              </span>{" "}
+              and{" "}
+              <span className="font-bold underline underline-offset-2">
+                PHOTOCOPIES
+              </span>{" "}
+              of{" "}
+              <ul className="list-disc pl-7">
+                <li>BIRTH CERTIFICATE</li>
+                <li>
+                  MOH APPLICATION FORM (Hardcopy of what you filled online)
+                </li>
+                <li>
+                  WASSCE CERTIFICATE, TESTIMONIAL OR WASSCE RESULT (Any of them
+                  works)
+                </li>
+                <li>IDENTIFICATION CARD (Preferably Ghana Card)</li>
+                <li>ANY OTHER RELEVANT DOCUMENT</li>
+              </ul>
             </li>
             <li>
               A <span className="font-bold">NON-REFUNDABLE</span> interview fee
@@ -80,26 +95,51 @@ export default function Page() {
             . Failure to attend the interviews translates to automatic
             forfeiting of admission.
           </p>
-          <table className="mb-3">
-            <tbody>
-              <tr>
-                <td>GOOGLE MAPS</td>
-                <td className="pl-4">
-                  <a
-                    target="_blank"
-                    className="flex items-center gap-1 font-semibold"
-                    href="https://maps.app.goo.gl/3hvx5amFjWxG173u6"
-                  >
-                    Click here <ExternalLink className="size-4" />
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>GPS ADDRESS</td>
-                <td className="pl-4">AK-035-0456</td>
-              </tr>
-            </tbody>
-          </table>
+          <article className="space-y-4">
+            <div>
+              <h4 className="font-semibold">Location:</h4>
+              <p>
+                We are located at Bantama, Kumasi. In the same premises with the
+                Komfo Anokye Teaching Hospital
+              </p>
+            </div>
+            <div>
+              <h4 className="font-semibold">Getting Here:</h4>
+              <p>
+                If you are coming by a ride hailing transport like Uber, Bolt or
+                Shaxi, Enter &quot;Komfo Anokye Teaching Hospital&quot; as the
+                destination. When you get to the security checkpoint, ask of the
+                Nursing and Midwifery Training College.
+              </p>
+              <p>
+                If you are coming by a Taxi, tell the driver you are heading to
+                &quot;Komfo Anokye Teaching Hospital&quot; as the destination.
+                When you get to the security checkpoint, ask of the Nursing and
+                Midwifery Training College.
+              </p>
+            </div>
+            <p></p>
+            <table className="mb-3">
+              <tbody>
+                <tr>
+                  <td className="font-semibold">GOOGLE MAPS</td>
+                  <td className="pl-4">
+                    <a
+                      target="_blank"
+                      className="flex items-center gap-1 font-semibold"
+                      href="https://maps.app.goo.gl/3hvx5amFjWxG173u6"
+                    >
+                      Click here <ExternalLink className="size-4" />
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="font-semibold">GPS ADDRESS</td>
+                  <td className="pl-4">AK-035-0456</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
           <p className="mb-5">
             For any questions or concerns, kindly call us on{" "}
             <span className="font-semibold">0595323741</span> or{" "}
