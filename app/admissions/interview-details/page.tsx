@@ -105,18 +105,20 @@ export default function Page() {
             </div>
             <div>
               <h4 className="font-semibold">Getting Here:</h4>
-              <p>
-                If you are coming by a ride hailing transport like Uber, Bolt or
-                Shaxi, Enter &quot;Komfo Anokye Teaching Hospital&quot; as the
-                destination. When you get to the security checkpoint, ask of the
-                Nursing and Midwifery Training College.
-              </p>
-              <p>
-                If you are coming by a Taxi, tell the driver you are heading to
-                &quot;Komfo Anokye Teaching Hospital&quot; as the destination.
-                When you get to the security checkpoint, ask of the Nursing and
-                Midwifery Training College.
-              </p>
+              <div className="space-y-2">
+                <p>
+                  If you are coming by a ride hailing transport like Uber, Bolt
+                  or Shaxi, Enter &quot;Komfo Anokye Teaching Hospital&quot; as
+                  the destination. When you get to the security checkpoint, ask
+                  of the Nursing and Midwifery Training College.
+                </p>
+                <p>
+                  If you are coming by a Taxi, tell the driver you are heading
+                  to &quot;Komfo Anokye Teaching Hospital&quot; as the
+                  destination. When you get to the security checkpoint, ask of
+                  the Nursing and Midwifery Training College.
+                </p>
+              </div>
             </div>
             <p></p>
             <table className="mb-3">
