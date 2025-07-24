@@ -1,6 +1,6 @@
 import { ExternalLink } from "lucide-react";
 import { Metadata } from "next";
-import InterviewDateForm from "./_components/InterviewDateForm";
+// import InterviewDateForm from "./_components/InterviewDateForm";
 
 export const metadata: Metadata = {
   title: "Interview details",
@@ -24,22 +24,19 @@ export default function Page() {
             <ApplyButton />
           </div>
         </div> */}
-        <div>
+        {/* <div>
           <h4 className="mb-1.5 font-semibold">Search for Interview Date.</h4>
           <InterviewDateForm />
-        </div>
+        </div> */}
         <div className="text-sm md:text-base">
           <p className="mb-5">
             Dear <span className="font-bold">APPLICANT</span>,
           </p>
           <p>
-            Your interview at{" "}
-            <span className="font-bold">
-              NURSING AND MIDWIFERY TRAINING COLLEGE, KUMASI
-            </span>{" "}
-            has been scheduled successfully. You can search for your{" "}
-            <strong>INTERVIEW DATE</strong> by entering your MOH Pin in the
-            search box above. Please take not of the following:
+            There is going to be a final interview held for all applicants who
+            could not attend their interview for whatever reason. The date for
+            this activity is <strong>25TH JULY, 2025</strong>. All applicants
+            are to take note of the following:
           </p>
           <ol className="list-decimal pl-5 md:pl-4 my-5">
             <li>
@@ -90,7 +87,9 @@ export default function Page() {
           </ol>
           <p className="mb-3">
             <span className="font-bold italic">
-              NB: THE SCHEDULED TIME FOR THE INTERVIEW IS 7:00AM
+              NB: THIS ACTIVITY IS FOR ONLY THOSE WHO STILL HAVE NOT TAKEN THE
+              INTERVIEW. IF YOU ARE FOUND TO HAVE ALREADY TAKEN THE INTERVIEW,
+              YOU WILL AUTOMATICALLY BE DISQUALIFIED.
             </span>
             . Failure to attend the interviews translates to automatic
             forfeiting of admission.
