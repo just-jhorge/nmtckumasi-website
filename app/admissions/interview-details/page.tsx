@@ -91,8 +91,6 @@ export default function Page() {
               INTERVIEW. IF YOU ARE FOUND TO HAVE ALREADY TAKEN THE INTERVIEW,
               YOU WILL AUTOMATICALLY BE DISQUALIFIED.
             </span>
-            . Failure to attend the interviews translates to automatic
-            forfeiting of admission.
           </p>
           <article className="space-y-4">
             <div>
