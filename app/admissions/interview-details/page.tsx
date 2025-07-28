@@ -253,7 +253,7 @@ export default function Page() {
                     </div>
                     <div className="flex-1 pb-8">
                       <div className="flex items-center gap-3 mb-1">
-                        <h3 className="font-semibold text-gray-900">
+                        <h3 className="text-sm md:text-base font-semibold text-gray-900">
                           {step.title}
                         </h3>
                         <Badge
@@ -272,7 +272,9 @@ export default function Page() {
                             : "Pending"}
                         </Badge>
                       </div>
-                      <p className="text-gray-600">{step.description}</p>
+                      <p className="text-gray-600 text-xs md:text-sm">
+                        {step.description}
+                      </p>
                     </div>
                   </div>
                 );
