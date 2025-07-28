@@ -243,7 +243,7 @@ export default function Page() {
                       </div>
                       {index < admissionSteps.length - 1 && (
                         <div
-                          className={`w-0.5 h-12 mt-2 ${
+                          className={`w-0.5 h-8 md:h-12 mt-2 ${
                             step.status === "completed"
                               ? "bg-green-200"
                               : "bg-gray-200"
