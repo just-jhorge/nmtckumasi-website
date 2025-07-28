@@ -1,15 +1,63 @@
-import { ExternalLink } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import {
+  AlertCircle,
+  CheckCircle,
+  Clock,
+  MessageCircle,
+  Users,
+} from "lucide-react";
 import { Metadata } from "next";
+import Link from "next/link";
+// import { ExternalLink } from "lucide-react";
 // import InterviewDateForm from "./_components/InterviewDateForm";
 
 export const metadata: Metadata = {
   title: "Interview details",
 };
 
+const admissionSteps = [
+  {
+    step: 1,
+    title: "Online Forms",
+    description: "Application form submission",
+    status: "completed",
+    icon: CheckCircle,
+  },
+  {
+    step: 2,
+    title: "Interview",
+    description: "Candidate interviews conducted",
+    status: "completed",
+    icon: CheckCircle,
+  },
+  {
+    step: 3,
+    title: "Verification & Shortlisting",
+    description: "Interview review and candidate shortlisting",
+    status: "current",
+    icon: Clock,
+  },
+  {
+    step: 4,
+    title: "Admission",
+    description: "Final admission decisions",
+    status: "pending",
+    icon: Users,
+  },
+];
+
 export default function Page() {
   return (
     <section className="w-full py-5 md:py-10">
-      <div className="container max-w-4xl mx-auto space-y-14">
+      <div className="container max-w-4xl mx-auto space-y-5">
         {/* <div className="py-40 text-center space-y-8">
           <h2 className="font-bold text-2xl md:text-4xl">
             ADMISSION FOR 2025/2026 ACADEMIC YEAR IS NOW OPENED
@@ -28,7 +76,7 @@ export default function Page() {
           <h4 className="mb-1.5 font-semibold">Search for Interview Date.</h4>
           <InterviewDateForm />
         </div> */}
-        <div className="text-sm md:text-base">
+        {/* <div className="text-sm md:text-base">
           <p className="mb-5">
             Dear <span className="font-bold">APPLICANT</span>,
           </p>
@@ -155,7 +203,190 @@ export default function Page() {
           <p className="font-bold">
             NB: Please only call between the hours of 8:00AM and 5:00PM
           </p>
+        </div> */}
+        <div className="text-center space-y-2 pt-8">
+          <h1 className="text-2xl md:text-4xl font-bold text-gray-900">
+            Admission Status Update
+          </h1>
+          <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
+            Thank you for your participation in our admission process.
+            Here&apos;s the current status of our admission timeline.
+          </p>
         </div>
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Clock className="h-5 w-5" />
+              Admission Process Timeline
+            </CardTitle>
+            <CardDescription>
+              Track your progress through our admission process
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-6">
+              {admissionSteps.map((step, index) => {
+                const Icon = step.icon;
+                return (
+                  <div key={step.step} className="flex items-start gap-4">
+                    <div className="flex flex-col items-center">
+                      <div
+                        className={`rounded-full p-2 ${
+                          step.status === "completed"
+                            ? "bg-green-100 text-green-600"
+                            : step.status === "current"
+                            ? "bg-blue-100 text-blue-600"
+                            : "bg-gray-100 text-gray-400"
+                        }`}
+                      >
+                        <Icon className="h-5 w-5" />
+                      </div>
+                      {index < admissionSteps.length - 1 && (
+                        <div
+                          className={`w-0.5 h-12 mt-2 ${
+                            step.status === "completed"
+                              ? "bg-green-200"
+                              : "bg-gray-200"
+                          }`}
+                        />
+                      )}
+                    </div>
+                    <div className="flex-1 pb-8">
+                      <div className="flex items-center gap-3 mb-1">
+                        <h3 className="font-semibold text-gray-900">
+                          {step.title}
+                        </h3>
+                        <Badge
+                          variant={
+                            step.status === "completed"
+                              ? "default"
+                              : step.status === "current"
+                              ? "secondary"
+                              : "outline"
+                          }
+                        >
+                          {step.status === "completed"
+                            ? "Completed"
+                            : step.status === "current"
+                            ? "In Progress"
+                            : "Pending"}
+                        </Badge>
+                      </div>
+                      <p className="text-gray-600">{step.description}</p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </CardContent>
+        </Card>
+        <Card className="border-blue-200 bg-blue-50">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2 text-blue-900">
+              <AlertCircle className="h-5 w-5" />
+              Current Status: Interview Review & Shortlisting
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <div className="bg-white rounded-lg p-4 border border-blue-200">
+              <h3 className="font-semibold text-blue-900 mb-2">
+                What&apos;s Happening Now?
+              </h3>
+              <ul className="space-y-2 text-blue-800">
+                <li className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-blue-600 mt-2 flex-shrink-0" />
+                  Our admission committee is carefully reviewing all interview
+                  assessments
+                </li>
+                <li className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-blue-600 mt-2 flex-shrink-0" />
+                  Candidates are being shortlisted based on interview
+                  performance and application criteria
+                </li>
+                <li className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-blue-600 mt-2 flex-shrink-0" />
+                  Final verification of documents and credentials is underway
+                </li>
+              </ul>
+            </div>
+            <p className="text-blue-800 font-medium">
+              Expected completion: Within the next 5-7 business days
+            </p>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <MessageCircle className="h-5 w-5" />
+              Stay Updated
+            </CardTitle>
+            <CardDescription>
+              Join our WhatsApp channel for real-time updates on the admission
+              process
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="flex flex-col sm:flex-row items-start gap-4">
+              <div className="flex-1">
+                <p className="text-gray-700 mb-2">
+                  Get instant notifications about admission results, important
+                  announcements, and next steps. Click button to join the
+                  channel.
+                </p>
+              </div>
+              <Button
+                className="bg-green-600 hover:bg-green-700 text-white flex items-center gap-2"
+                asChild
+              >
+                <Link href="https://whatsapp.com/channel/0029Vb6Y3TBCMY0QvipFN52y">
+                  <MessageCircle className="h-4 w-4" />
+                  Join WhatsApp Channel
+                </Link>
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
+        <Card className="border-amber-200 bg-amber-50">
+          <CardContent className="pt-6">
+            <div className="flex items-start gap-3">
+              <AlertCircle className="h-5 w-5 text-amber-600 mt-0.5 flex-shrink-0" />
+              <div className="space-y-2">
+                <h3 className="font-semibold text-amber-900">
+                  Important Notice
+                </h3>
+                <ul className="text-amber-800 space-y-1 text-sm">
+                  <li>
+                    • Please be patient as we carefully review each application
+                  </li>
+                  <li>
+                    • You can contact the admission office for any inquiries by{" "}
+                    <a
+                      href="mailto:admissions@nmtckumasi.edu.gh"
+                      className="underline text-blue-500 underline-offset-2"
+                    >
+                      Email
+                    </a>{" "}
+                    or{" "}
+                    <a
+                      href="tel:0241385150"
+                      className="underline text-blue-500 underline-offset-2"
+                    >
+                      Phone
+                    </a>
+                  </li>
+                  <li>
+                    • All updates will be communicated through official channels
+                    only
+                  </li>
+                  <li>
+                    • Ensure your contact information is up to date in the
+                    portal
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
       </div>
     </section>
   );
