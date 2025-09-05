@@ -35,13 +35,18 @@ export const navigationLinks: NavigationLink[] = [
         href: "/admissions/application-process",
         label: "Application Process",
       },
-      {
-        id: 302,
-        href: "/admissions/interview-details",
-        label: "Interview Details",
-      },
+      // {
+      //   id: 302,
+      //   href: "/admissions/interview-details",
+      //   label: "Interview Details",
+      // },
       {
         id: 303,
+        href: "/admissions/admissions-list",
+        label: "Admissions List",
+      },
+      {
+        id: 304,
         href: "#",
         isAsset: true,
         assetLocation: "/docs/entry-requirements.pdf",

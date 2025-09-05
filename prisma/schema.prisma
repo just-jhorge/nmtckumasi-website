@@ -49,3 +49,15 @@ model Interview {
 
   @@map("interview_dates")
 }
+
+model Admitted {
+  id        String @id @default(cuid())
+  name      String
+  pin       String @unique
+  programme String
+  code      String
+  hall      String
+
+  @@index([pin])
+  @@map("admitted_list")
+}
