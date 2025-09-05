@@ -105,7 +105,7 @@ const MyDocument: React.FC<{ applicant: Admitted }> = ({ applicant }) => (
         </Text>
         <Text style={styles.listItem}>
           You are affiliated to{" "}
-          <Text style={{ fontWeight: "bold" }}>{applicant.hall}</Text>
+          <Text style={{ fontWeight: "bold" }}>{applicant.hall}</Text> hall.
         </Text>
       </View>
 
