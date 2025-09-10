@@ -55,7 +55,7 @@ model Admitted {
   name      String
   pin       String @unique
   programme String
-  code      String
+  code      Int
   hall      String
 
   @@index([pin])
