@@ -77,7 +77,7 @@ export default function AdmissionsList({ applicants }: AdmissionsListProps) {
             password sent along with the SMS.
           </p>
           <p className="font-medium text-sm mt-4">
-            Last Update: 10<sup>th</sup> September, 2025
+            Last Update: 11<sup>th</sup> September, 2025
           </p>
         </div>
         <Tabs defaultValue="rgn" className="w-full">
