@@ -40,11 +40,11 @@ export const navigationLinks: NavigationLink[] = [
       //   href: "/admissions/interview-details",
       //   label: "Interview Details",
       // },
-      {
-        id: 303,
-        href: "/admissions/admissions-list",
-        label: "Admissions List",
-      },
+      // {
+      //   id: 303,
+      //   href: "/admissions/admissions-list",
+      //   label: "Admissions List",
+      // },
       {
         id: 304,
         href: "#",
