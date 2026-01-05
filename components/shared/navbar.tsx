@@ -17,7 +17,6 @@ import Image from "next/image";
 import { navigationLinks } from "@/data";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import schoolLogo from "../../public/images/logo.webp";
 import { AlignJustify, ChevronDown } from "lucide-react";
 
 const Navbar = () => {
@@ -25,7 +24,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 w-full bg-white h-16 center border-b border-input shadow-sm">
       <div className="container flex-between">
         <Link href="/" className="flex items-center gap-1">
-          <Image src={schoolLogo} alt="logo" height={48} width={43} />
+          <Image src="/images/logo.webp" alt="logo" height={48} width={43} />
           <p className="text-xs text-emerald-600 leading-none">
             <span className="font-bold">NURSING AND MIDWIFERY</span> <br />
             Training College, Kumasi
@@ -58,6 +57,14 @@ const Navbar = () => {
                             <span className="text-[10px] bg-primary py-0.5 px-1 text-white rounded-sm">
                               asset
                             </span>
+                          </a>
+                        ) : link.isExternal ? (
+                          <a
+                            href={link.href}
+                            target="_blank"
+                            className="text-sm"
+                          >
+                            {link.label}
                           </a>
                         ) : (
                           <Link href={link.href} className="text-sm">

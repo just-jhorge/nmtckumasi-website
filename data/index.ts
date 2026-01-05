@@ -71,6 +71,12 @@ export const navigationLinks: NavigationLink[] = [
         label: "Library Guide",
       },
       {
+        id: 404,
+        href: "https://lib.nmtckumasi.edu.gh",
+        label: "Catalogue",
+        isExternal: true,
+      },
+      {
         id: 403,
         href: "/library/e-library",
         label: "E-Library",

@@ -5,6 +5,7 @@ interface BaseLink {
   href: string;
   label: string;
   isAsset?: boolean;
+  isExternal?: boolean;
   assetLocation?: string;
 }
 
