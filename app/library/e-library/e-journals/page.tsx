@@ -1,10 +1,4 @@
 import ResourceCard from "../ResourceCard";
-import ethos from "@/public/images/library_images/ethos.jpg";
-import ndltd from "@/public/images/library_images/ndltd.png";
-import eTheses from "@/public/images/library_images/ethos.jpg";
-import ucc from "@/public/images/library_images/ucc_library.png";
-import dart from "@/public/images/library_images/dart_europe.png";
-import openAccess from "@/public/images/library_images/open-doar.png";
 
 export default function Page() {
   const journals = [
