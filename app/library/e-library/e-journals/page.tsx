@@ -28,14 +28,14 @@ export default function Page() {
     },
     {
       id: 5,
-      name: "Full PDF (via Unpaywall)",
-      href: "https://unpaywall.org",
+      name: "Full PDF",
+      href: "https://www.freefullpdf.com/#gsc.tab=0",
       imageSrc: "",
     },
     {
       id: 6,
-      name: "The Global Delivery Online Articles (Research4Life)",
-      href: "https://www.research4life.org",
+      name: "The Global Delivery Online Articles",
+      href: "https://www.globalhealthdelivery.org",
       imageSrc: "",
     },
     {
@@ -47,13 +47,13 @@ export default function Page() {
     {
       id: 8,
       name: "HighWire Free Back Files",
-      href: "https://highwire.stanford.edu/lists/freeart.dtl",
+      href: "http://portal.highwire.org/lists/freeart.dtl",
       imageSrc: "",
     },
     {
       id: 9,
       name: "HighWire Free to Developing Economies",
-      href: "https://highwire.stanford.edu/lists/devecon.dtl",
+      href: "http://portal.highwire.org/lists/devecon.dtl",
       imageSrc: "",
     },
     {
@@ -71,13 +71,13 @@ export default function Page() {
     {
       id: 12,
       name: "Japan Science and Technology Aggregator (J-STAGE)",
-      href: "https://www.jstage.jst.go.jp",
+      href: "https://www.jstage.jst.go.jp/browse",
       imageSrc: "",
     },
     {
       id: 13,
       name: "MSD Manuals",
-      href: "https://www.msdmanuals.com",
+      href: "https://www.msdmanuals.com/professional?utm_campaign=2022partnerships&utm_medium=Linking&utm_source=KwameNkrumahUniversityofScienceandTechnology",
       imageSrc: "",
     },
     {
@@ -89,7 +89,7 @@ export default function Page() {
     {
       id: 15,
       name: "OpenEdition Journals",
-      href: "https://journals.openedition.org",
+      href: "https://www.openedition.org/catalogue-journals",
       imageSrc: "",
     },
     {
@@ -125,7 +125,7 @@ export default function Page() {
     {
       id: 21,
       name: "ScienceDirect (Open Access Content)",
-      href: "https://www.sciencedirect.com/browse/journals-and-books?accessType=openAccess",
+      href: "https://www.sciencedirect.com/",
       imageSrc: "",
     },
     {
@@ -137,7 +137,7 @@ export default function Page() {
     {
       id: 23,
       name: "Social Science Research Network (SSRN)",
-      href: "https://www.ssrn.com",
+      href: "https://www.ssrn.com/index.cfm/en/",
       imageSrc: "",
     },
     {
@@ -161,7 +161,7 @@ export default function Page() {
     {
       id: 27,
       name: "UpToDate",
-      href: "https://www.uptodate.com",
+      href: "https://www.uptodate.com/login",
       imageSrc: "",
     },
     {
