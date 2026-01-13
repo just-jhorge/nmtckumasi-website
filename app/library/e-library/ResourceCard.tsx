@@ -15,25 +15,13 @@ const ResourceCard = ({ resource }: ResourceCardProps) => {
         <div className="relative h-full w-2/5 bg-muted rounded-sm overflow-hidden border border-input">
           <Image
             fill
-            src={resource.imageSrc}
+            src={resource.imageSrc || "/images/placeholder.svg"}
             alt={resource.name.toLowerCase().split(" ").join("_")}
             className="absolute h-full w-full object-cover"
           />
         </div>
         <div className="flex-1 h-full flex flex-col justify-between">
-          <div className="space-y-2">
-            <h3 className="text-sm md:text-base font-bold">{resource.name}</h3>
-            <div className="flex gap-1">
-              {resource.subjects.map((subject) => (
-                <div
-                  key={subject}
-                  className="w-fit py-0.5 px-1.5 text-xs rounded-full border border-input font-medium"
-                >
-                  {subject}
-                </div>
-              ))}
-            </div>
-          </div>
+          <h3 className="text-sm md:text-base font-bold">{resource.name}</h3>
           <div className="w-full flex justify-end">
             <Button asChild size="sm" className="w-fit">
               <Link

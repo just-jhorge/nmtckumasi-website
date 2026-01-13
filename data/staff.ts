@@ -38,8 +38,8 @@ export const staff = [
 export const management = [
   {
     position: "Principal",
-    name: "Joana Owusu-Danso",
-    email: "jo6danso@gmail.com",
+    name: "David Ben Sampson (PhD)",
+    email: "sampsondavid48@yahoo.com",
     image: mary,
   },
   {
@@ -79,16 +79,16 @@ export const management = [
     image: alex,
   },
   {
-    position: "Quality Assurance Officer",
-    name: "Mabel Ephraim",
-    email: "yaakyem@yahoo.com",
-    image: mary,
-  },
-  {
     position: "Librarian",
     name: "Ransford Sarfo-Mensah",
     email: "rsarfomensah@gmail.com",
     image: alex,
+  },
+  {
+    position: "Quality Assurance Officer",
+    name: "Mabel Ephraim",
+    email: "yaakyem@yahoo.com",
+    image: mary,
   },
   {
     position: "Matron",

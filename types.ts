@@ -53,9 +53,8 @@ export type InterviewDate = {
 
 export type Resource = {
   name: string;
-  subjects: string[];
   href: string;
-  imageSrc: StaticImageData;
+  imageSrc?: StaticImageData | string;
 };
 
 export type InterviewDetails = {
