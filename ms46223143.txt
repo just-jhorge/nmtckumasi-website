@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "nmtckumasi.edu.gh",
+  "Id": "79995265-8551-4379-8418-7bef73b0dc95"
+}
